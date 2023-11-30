@@ -4,7 +4,10 @@ import AddTask from "../components/AddTask";
 import TaskList from "../components/TaskList";
 import Footer from "../components/Footer";
 import { Authenticator } from '@aws-amplify/ui-react';
+import { Hub } from "@aws-amplify/core";
 import { Amplify } from 'aws-amplify';
+import { Auth } from 'aws-amplify';
+
 import awsconfig from '../aws-exports';
 
 import '@aws-amplify/ui-react/styles.css';
@@ -12,7 +15,6 @@ import './Authenticator.css';
 
 Amplify.configure(awsconfig);
 
-// ... rest of your code
 
 
 
@@ -21,33 +23,49 @@ export const EditHandlerContext = createContext();
 
 const TodoApp = () => {
 
- 
+
 
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
   const [editedText, setEditedText] = useState("");
   const [toggleEditMode, setToggleEditMode] = useState(true);
+
+  useEffect(() => {
+    Hub.listen('auth', ({ payload: { event, data } }) => {
+      switch (event) {
+        case 'signIn':
+          // A user has signed in, and the user's information is in the data object
+          const userId = data.signInUserSession.idToken.payload.sub;
+          fetchingData(userId);
+          break;
+        default:
+          break;
+      }
+    });
+  }, []);
 
   useEffect(() => {
     // getting data from the server
     fetchingData();
   }, []);
 
+
+
   // fetching data
-  const fetchingData = async () => {
-    try {
-      const res = await fetch(`${process.env.REACT_APP_API_URL}/fetchTodos`);
-      if (!res.ok) throw new Error("Something went wrong!");
-      console.log(res);
-      const data = await res.json();
-      setTasks(data);
-      setLoading(false);
-    } catch (error) {
-      setError(error.message);
-    }
-  };
+  // fetching data
+const fetchingData = async (userId) => {
+  try {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/fetchTodos`);
+    if (!res.ok) throw new Error("Something went wrong!");
+    console.log(res);
+    const data = await res.json();
+    setTasks(data);
+    setLoading(false);
+  } catch (error) {
+    setError(error.message);
+  }
+};
 
 //Delete event
 //Delete event
@@ -131,7 +149,6 @@ const puttingRequest = async (id, newData) => {
     console.error('Failed to update task:', error);
   }
 };
-
 
 
 return (

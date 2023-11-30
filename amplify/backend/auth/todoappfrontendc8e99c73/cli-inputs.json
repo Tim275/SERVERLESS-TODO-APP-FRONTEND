@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "todoappfrontend1f9444ff_identitypool_1f9444ff",
+    "identityPoolName": "todoappfrontendc8e99c73_identitypool_c8e99c73",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "todoap1f9444ff",
-    "userPoolName": "todoappfrontend1f9444ff_userpool_1f9444ff",
+    "resourceNameTruncated": "todoapc8e99c73",
+    "userPoolName": "todoappfrontendc8e99c73_userpool_c8e99c73",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,15 +31,12 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "todoap1f9444ff_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "todoapc8e99c73_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "1f9444ff",
-    "resourceName": "todoappfrontend1f9444ff",
+    "sharedId": "c8e99c73",
+    "resourceName": "todoappfrontendc8e99c73",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "usernameAttributes": [
-      "email"
-    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

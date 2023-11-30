@@ -17,7 +17,7 @@ const AddTask = ({ tasks, setTasks }) => {
   // use "texeet"
  // task posting
  const taskPosting = async (text) => {
-  const res = await fetch(`https://63uty1xizc.execute-api.eu-central-1.amazonaws.com/dev/addTodo`, {
+  const res = await fetch(`https://whi2a49ome.execute-api.eu-central-1.amazonaws.com/dev/addTodo`, {
     method: "POST",
     headers: {
       "Content-type": "application/json",
