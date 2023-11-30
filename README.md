@@ -1,5 +1,4 @@
-## Todo App: A Simple Todo Application
-
+##  SERVERLESS TODO APP  (AWS)
 
 
 
