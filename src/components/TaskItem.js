@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { FiEdit, FiTrash } from "react-icons/fi";
-import { DeleteHandlerContext, EditHandlerContext } from "../App";
+import { DeleteHandlerContext, EditHandlerContext } from "../pages/Todoapp";
 import { useEffect } from "react";
 
 

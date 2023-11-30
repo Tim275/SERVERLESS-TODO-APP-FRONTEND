@@ -1,0 +1,23 @@
+.amplify-authenticator {
+    font-family: 'Press Start 2P', cursive; /* This is a pixelated font, similar to those used in old video games. */
+    background-color: #000; /* Use a black background. */
+    color: #0f0; /* Use a bright green color for the text, similar to an old computer terminal. */
+  }
+  
+  .amplify-sign-in {
+    border: 2px solid #0f0; /* Add a green border to the sign-in form. */
+    border-radius: 10px; /* Round the corners of the form. */
+    padding: 20px; /* Add some padding inside the form. */
+  }
+  
+  .amplify-form-input {
+    background-color: #000; /* Use a black background for the input fields. */
+    color: #0f0; /* Use a green color for the input text. */
+    border: 2px solid #0f0; /* Add a green border to the input fields. */
+  }
+  
+  .amplify-form-button {
+    background-color: #0f0; /* Use a green background for the button. */
+    color: #000; /* Use a black color for the button text. */
+    border: none; /* Remove the default border from the button. */
+  }
