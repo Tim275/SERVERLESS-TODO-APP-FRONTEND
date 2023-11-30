@@ -10,7 +10,7 @@ This is a Todo application built with React.js and backend API written in Lambda
 <br/>
 
 
-##Architecture Diagramm
+## Architecture Diagramm
 
 ![image](https://github.com/Tim275/Serverless-TODO-APP-Frontend/assets/117520669/9a55bd08-e35d-4220-8ad3-788ee4769411)
 
