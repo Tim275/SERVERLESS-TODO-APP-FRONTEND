@@ -16,33 +16,37 @@ This is a Todo application built with React.js and backend API written in Lambda
 
 
 
-### Features:
+### Front-END-Feautures:
 
 1.  All of the CRUD operations has been handled properly as the async actions
 2.  An integrated JSON server holds and serves the data under the hood
 3.  Added tasks also saved into the local storage of the client’s browser
 
-### How to use this repo?
+### BACK-END-Feautures:
 
-Download or clone this repo and run the following command in the terminal:
+# Lambdas
 
-```
-npm install
-or
-npm i
-```
+1. addTodo: This Lambda function is used to create a new todo item in the DynamoDB table.
+2. deleteTodo: This Lambda function is used to delete a specific todo item from the DynamoDB table based on its `id`.
+3. fetchTodo: This Lambda function is used to retrieve a specific todo item from the DynamoDB table based on its `id`.
+3. fetchTodos: This Lambda function is used to retrieve all todo items for a specific user from the DynamoDB table.
+4. updateCompleted.js: This Lambda function is used to update the 'completed' status of a specific todo item in the DynamoDB table.
+5. editTodo.js: This Lambda function is used to update the details of a specific todo item in the DynamoDB table.
+6. updateComplete: This Lambda function is used to update the 'completed status of a specific todo item in the DanymoDB table.
+
+
+
+# DynamoDb
+
+serves persistent storage for the todo items in this app.
 
 ### View the app (Hosted on Netlify):
 
-https://masud-todo-app.netlify.app/
+soon on amplify
 
-### Necessary Links:
-
-1. API Endpoint: https://capricious-ash-stomach.glitch.me/tasks
-2. API GitHub: https://github.com/masudranashawon/todo-app-server
 
 ### Tools:
 
-React.js, Tailwind CSS
+React.js, Tailwind CSS, AWS Cloud
 
 ### Thanks for visiting this repo, take care!
