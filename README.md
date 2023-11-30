@@ -45,6 +45,6 @@ soon on amplify
 
 ### Tools:
 
-React.js, Tailwind CSS, AWS Cloud
+React.js, Tailwind CSS, AWS Cloud, NodeJs
 
 ### Thanks for visiting this repo, take care!
