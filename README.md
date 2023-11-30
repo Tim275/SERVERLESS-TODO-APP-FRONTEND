@@ -5,7 +5,7 @@
 
 ### What is Todo App?
 
-This is a todo application built with React.js and backend API server written in Node.js. It's a simple, intuitive, and elegant UI for managing your todo list. It comes with a number of great features such as creating, updating or deleting tasks from the list.
+This is a Todo application built with React.js and backend API written in Lambda
 <br/>
 <br/>
 
