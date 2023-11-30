@@ -18,8 +18,7 @@ This is a Todo application built with React.js and backend API written in Lambda
 ## Front-END-Feautures:
 
 1.  All of the CRUD operations has been handled properly as the async actions
-2.  An integrated JSON server holds and serves the data under the hood
-3.  Added tasks also saved into the local storage of the client’s browser
+2.  Added tasks also saved into the local storage of the client’s browser
 
 ## BACK-END-Feautures:
 
