@@ -15,15 +15,15 @@ This is a Todo application built with React.js and backend API written in Lambda
 
 
 
-### Front-END-Feautures:
+## Front-END-Feautures:
 
 1.  All of the CRUD operations has been handled properly as the async actions
 2.  An integrated JSON server holds and serves the data under the hood
 3.  Added tasks also saved into the local storage of the client’s browser
 
-### BACK-END-Feautures:
+## BACK-END-Feautures:
 
-# Lambdas
+### Lambdas
 
 1. addTodo: This Lambda function is used to create a new todo item in the DynamoDB table.
 2. deleteTodo: This Lambda function is used to delete a specific todo item from the DynamoDB table based on its `id`.
@@ -35,7 +35,7 @@ This is a Todo application built with React.js and backend API written in Lambda
 
 
 
-# DynamoDb
+### DynamoDb
 
 serves persistent storage for the todo items in this app.
 
